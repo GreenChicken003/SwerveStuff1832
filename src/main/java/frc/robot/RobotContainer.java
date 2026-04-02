@@ -48,9 +48,11 @@ public class RobotContainer {
     public RobotContainer() {
         configureBindings();
         drivetrain.configurePathPlanner();
+        NamedCommands.registerCommand("ClimbDown", climb.climbDown());
+        NamedCommands.registerCommand("ClimbUp", climb.climbUp());
+        NamedCommands.registerCommand("Hold", climb.Hold());
         autoChooser = AutoBuilder.buildAutoChooser();
         SmartDashboard.putData("Auto Chooser", autoChooser);
-        NamedCommands.registerCommand("Climb", climb.climbDown());
     }
 
     private void configureBindings() {
