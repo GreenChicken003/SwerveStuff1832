@@ -28,7 +28,7 @@ public Command climbUp() {
 }
 public Command Hold() {
   return this.run(()->{
-    motor.set(.05);
+    motor.set(0);
   });
 }
   @Override
