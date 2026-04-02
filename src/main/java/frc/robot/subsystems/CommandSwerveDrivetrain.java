@@ -10,12 +10,17 @@ import com.ctre.phoenix6.Utils;
 import com.ctre.phoenix6.swerve.SwerveDrivetrainConstants;
 import com.ctre.phoenix6.swerve.SwerveModuleConstants;
 import com.ctre.phoenix6.swerve.SwerveRequest;
+import com.pathplanner.lib.config.ModuleConfig;
+import com.pathplanner.lib.config.RobotConfig;
 
 import edu.wpi.first.math.Matrix;
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
+import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.numbers.N1;
 import edu.wpi.first.math.numbers.N3;
+import edu.wpi.first.math.system.plant.DCMotor;
+import edu.wpi.first.math.util.Units;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.DriverStation.Alliance;
 import edu.wpi.first.wpilibj.Notifier;
@@ -23,7 +28,7 @@ import edu.wpi.first.wpilibj.RobotController;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Subsystem;
 import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine;
-
+import frc.robot.generated.TunerConstants;
 import frc.robot.generated.TunerConstants.TunerSwerveDrivetrain;
 
 /**
@@ -267,6 +272,18 @@ public class CommandSwerveDrivetrain extends TunerSwerveDrivetrain implements Su
     public void addVisionMeasurement(Pose2d visionRobotPoseMeters, double timestampSeconds) {
         super.addVisionMeasurement(visionRobotPoseMeters, Utils.fpgaToCurrentTime(timestampSeconds));
     }
+
+     public void configurePathPlanner() {
+        RobotConfig config;
+        try{
+        config = RobotConfig.fromGUISettings();
+        } catch (Exception e) {
+        // Handle exception as needed
+        config = new RobotConfig(50, 1.89, new ModuleConfig(Units.inchesToMeters(TunerConstants.kWheelRadiusInches)
+        , 5.45, 2.05, DCMotor.getKrakenX60(1).withReduction(6.746031746031747), 55, 1)
+        , new Translation2d(Units.inchesToMeters(TunerConstants.driveBaseRadius), Units.inchesToMeters(TunerConstants.driveBaseRadius)), new Translation2d(Units.inchesToMeters(TunerConstants.driveBaseRadius), Units.inchesToMeters(-TunerConstants.driveBaseRadius)),
+         new Translation2d(Units.inchesToMeters(-TunerConstants.driveBaseRadius), Units.inchesToMeters(TunerConstants.driveBaseRadius)), new Translation2d(Units.inchesToMeters(-TunerConstants.driveBaseRadius),Units.inchesToMeters(-TunerConstants.driveBaseRadius)));
+        }
 
     /**
      * Adds a vision measurement to the Kalman Filter. This will correct the odometry pose estimate

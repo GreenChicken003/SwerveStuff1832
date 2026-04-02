@@ -190,6 +190,7 @@ public class TunerConstants {
             kBackRightSteerMotorId, kBackRightDriveMotorId, kBackRightEncoderId, kBackRightEncoderOffset,
             kBackRightXPos, kBackRightYPos, kInvertRightSide, kBackRightSteerMotorInverted, kBackRightEncoderInverted
         );
+    public static final String driveBaseRadius = null;
 
     /**
      * Creates a CommandSwerveDrivetrain instance.
@@ -283,4 +284,4 @@ public class TunerConstants {
             );
         }
     }
-}
+}
