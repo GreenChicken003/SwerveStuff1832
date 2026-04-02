@@ -1,0 +1,37 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Middle Start into Climb Set Up Right"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Right Set Up into Climb"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 12.38
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Climb"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

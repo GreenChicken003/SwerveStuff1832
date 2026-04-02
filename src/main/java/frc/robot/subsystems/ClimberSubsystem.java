@@ -16,6 +16,7 @@ public class ClimberSubsystem extends SubsystemBase {
   private final SparkMax climberMotor;
 
   /** Creates a new CANBallSubsystem. */
+  @SuppressWarnings("removal")
   public ClimberSubsystem() {
     // create brushed motors for each of the motors on the launcher mechanism
     climberMotor = new SparkMax(CLIMBER_MOTOR_ID, MotorType.kBrushed);

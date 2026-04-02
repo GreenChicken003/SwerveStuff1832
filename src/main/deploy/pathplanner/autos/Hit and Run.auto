@@ -1,0 +1,49 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Wrecking Ball"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Run away"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Right Start into Climb Set Up right"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Right Set Up into Climb"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 4.4
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Climb"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}
