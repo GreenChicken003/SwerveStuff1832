@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Climb extends SubsystemBase {
-public final int motorid=8;
+public final int motorid=20;
 public final TalonFX motor;
   public Climb() {
     motor=new TalonFX(motorid);
