@@ -12,7 +12,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Climb extends SubsystemBase {
 public final int motorid=20;
-public final int limitSwitchID=99999999; //:D
+public final int limitSwitchID=9;
 public final TalonFX motor;
 private DigitalInput limitSwitch;
 
@@ -31,13 +31,8 @@ public Command climbDown() {
 
 public Command climbUp() {
   return this.run(()->{
-    if (limitSwitch.get()) {
-      motor.set(0);
-    } else {
-      motor.set(-1);
-    }
-
-  });
+    motor.set(-1);
+  }).until(()->(motor.getPosition().getValueAsDouble() > 100));
 }
 
 public Command Hold() {
