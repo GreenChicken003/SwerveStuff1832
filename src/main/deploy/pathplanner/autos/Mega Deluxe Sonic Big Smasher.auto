@@ -13,50 +13,43 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Run away"
+            "pathName": "Maga Smasher"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "Right Start into Climb Set Up right"
+            "pathName": "Mega Smasher"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "Right Set Up into Climb"
+            "pathName": "Maga Smasher"
           }
         },
         {
-          "type": "wait",
+          "type": "path",
           "data": {
-            "waitTime": 4.27
+            "pathName": "Mega Smasher"
           }
         },
         {
-          "type": "deadline",
+          "type": "path",
           "data": {
-            "commands": [
-              {
-                "type": "wait",
-                "data": {
-                  "waitTime": 3.5
-                }
-              },
-              {
-                "type": "named",
-                "data": {
-                  "name": "ClimbDown"
-                }
-              }
-            ]
+            "pathName": "Mega Smasher"
           }
         },
         {
-          "type": "named",
+          "type": "path",
           "data": {
-            "name": "Hold"
+            "pathName": "Maga Smasher"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Mega Smasher"
           }
         }
       ]
