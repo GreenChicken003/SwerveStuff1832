@@ -17,9 +17,15 @@
           }
         },
         {
+          "type": "path",
+          "data": {
+            "pathName": "Final Adjustment Right"
+          }
+        },
+        {
           "type": "wait",
           "data": {
-            "waitTime": 8.93
+            "waitTime": 7.61
           }
         },
         {
