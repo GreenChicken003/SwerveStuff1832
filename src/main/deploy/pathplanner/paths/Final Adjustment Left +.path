@@ -3,44 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-<<<<<<< HEAD:src/main/deploy/pathplanner/paths/Final Adjustment Left.path
         "x": 1.115,
         "y": 4.3
       },
       "prevControl": null,
       "nextControl": {
-        "x": 0.6107591223079222,
+        "x": 0.864778477400364,
         "y": 4.3
-=======
-        "x": 3.553688888888889,
-        "y": 7.484533333333332
-      },
-      "prevControl": null,
-      "nextControl": {
-        "x": 2.8174333333333337,
-        "y": 5.211388888888888
->>>>>>> 6fcdb0cdd1f7b34382ae8c7f865848276f0b368c:src/main/deploy/pathplanner/paths/New Path.path
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-<<<<<<< HEAD:src/main/deploy/pathplanner/paths/Final Adjustment Left.path
-        "x": 0.8,
+        "x": 0.815,
         "y": 4.3
       },
       "prevControl": {
-        "x": 1.05,
+        "x": 1.1256339966964433,
         "y": 4.3
-=======
-        "x": 2.481800000001121,
-        "y": 4.502733333339021
-      },
-      "prevControl": {
-        "x": 2.2674222222233436,
-        "y": 6.4321333333390225
->>>>>>> 6fcdb0cdd1f7b34382ae8c7f865848276f0b368c:src/main/deploy/pathplanner/paths/New Path.path
       },
       "nextControl": null,
       "isLocked": false,
@@ -52,7 +33,7 @@
   "pointTowardsZones": [],
   "eventMarkers": [],
   "globalConstraints": {
-    "maxVelocity": 0.5,
+    "maxVelocity": 0.44,
     "maxAcceleration": 3.0,
     "maxAngularVelocity": 540.0,
     "maxAngularAcceleration": 720.0,
