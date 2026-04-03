@@ -7,19 +7,13 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Right Set Up into Climb"
+            "pathName": "Wrecking Ball"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "Final Adjustment Right +"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ClimbUp"
+            "pathName": "Double Wrecking Ball"
           }
         }
       ]
