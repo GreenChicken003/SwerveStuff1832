@@ -7,7 +7,11 @@
         {
           "type": "path",
           "data": {
+<<<<<<< HEAD:src/main/deploy/pathplanner/autos/Anti-Cobra SMASH Path Right Trench.auto
             "pathName": "Slingshot Anti-Cobra Wrecking Ball"
+=======
+            "pathName": "MidFieldRightBlock"
+>>>>>>> 9a8ebd43489c57930adaf8f611e51800a670317f:src/main/deploy/pathplanner/autos/Anti-Cobra Sweep Path Right Trench.auto
           }
         }
       ]

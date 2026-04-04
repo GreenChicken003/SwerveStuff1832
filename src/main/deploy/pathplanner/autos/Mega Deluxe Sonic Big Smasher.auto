@@ -37,12 +37,6 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Mega Smasher"
-          }
-        },
-        {
-          "type": "path",
-          "data": {
             "pathName": "Maga Smasher"
           }
         },
@@ -50,6 +44,12 @@
           "type": "path",
           "data": {
             "pathName": "Mega Smasher"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Maga Smasher"
           }
         }
       ]
